@@ -18,14 +18,8 @@ const App = () => {
 
   useEffect(() => {
     const getDefaultWeather = async () => {
-      const data = await weatherService.show('Manama');
-      const newWeatherState = {
-        location: data.location.name,
-        temperature: data.current.temp_c,
-        condition: data.current.condition.text,
-      };
-      setWeather(newWeatherState);  
-    }
+      await getWeather('Manama');
+    };
     getDefaultWeather();
   }, []);
 
