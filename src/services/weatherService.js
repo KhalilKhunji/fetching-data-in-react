@@ -1,4 +1,4 @@
-const API_KEY = '<API Key Here>';
+const API_KEY = '<Insert API Here>';
 const BASE_URL = `https://api.weatherapi.com/v1/current.json?key=${API_KEY}`;
 
 const show = async (city) => {
